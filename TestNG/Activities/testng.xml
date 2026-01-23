@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--
+<suite name="ExampleSuite">
+<test name="SuiteTests">
+<classes>
+<class name = "suiteExample.DemoOne"/>
+<class name = "suiteExample.DemoTwo"/>
+</classes>
+</test>
+</suite>
+-->
+<!--	
+<suite name="FSTTests" thread-count="8" parallel="classes">
+    <groups>
+        <run>
+            <include name="HeaderTests" />
+        </run>
+    </groups>
+    <test name="FSTActivities">
+        <classes>
+            <class name="TestNg.Activity5" />
+            <class name="suiteExample.DemoOne" />
+            <class name="suiteExample.DemoTwo" />
+        </classes>
+    </test>
+</suite>
+-->
+
+<!--
+<suite name="FSTTests">
+    <parameter name="username" value="admin" />
+    <parameter name="password" value="password" />
+    <test name="FSTActivities">
+        <classes>
+            <class name="activities.Activity6" />
+        </classes>
+    </test>
+</suite>
+-->
+
+<suite name="FSTTests" thread-count="4" parallel="classes">
+   
+	<groups>
+        <run>
+            <include name="HeaderTests" />
+        </run>
+    </groups>
+    <parameter name="username" value="admin" />
+    <parameter name="password" value="password" />
+    <test name="FSTActivities">
+        <classes>
+            <class name="TestNg.Activity1" />
+            <class name="TestNg.Activity2" />
+            <class name="TestNg.Activity3" />
+            <class name="suiteExample.DemoOne" />
+            <class name="suiteExample.DemoTwo" />
+            <class name="TestNg.Activity5" />
+            <class name="TestNg.Activity6" />
+            <class name="TestNg.Activity7" />
+        </classes>
+    </test>
+</suite>
